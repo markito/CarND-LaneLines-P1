@@ -34,8 +34,8 @@ image = region_of_interest(image, vertices)
 
 The `draw_lines()` function is calculating the slopes and grouping by left/right and then calculating a `running_average()` of both.  This is an area that I'm not 100% sure on how to use those values. 
   
-[out_sample1.png][./out_sample1.png]
-[out_sample2.png][./out_sample2.png]
+![out_sample1.png][out_sample1.png]
+![out_sample2.png][out_sample2.png]
 
 ###2. Identify potential shortcomings with your current pipeline
 
