@@ -40,16 +40,16 @@ The `draw_lines()` function is calculating the slopes and grouping by left/right
 
 ![out_sample2.png](out_sample2.png)
 
-It took me a lot of time to understand why and how I should use the average for the slope and the line. After some discussions on Slack I understood the reason for it (multiple lines with noise, not well "centered") and it helped me understand that.   Still I had to learn how to actually plot to lines to right extend which pretty much got done through:
+It took me a lot of time to understand why and how I should use the average for the slope and the line. After some discussions on Slack I understood the reason for it (multiple lines with noise, not well "centered"). That was super helpful! Still I had to learn how to actually plot to lines to right the extend which pretty much got done through:
 
 ```
 topX = (img.shape[0] * line_length - lineAvg) / slopeAvg
 bottomX = (img.shape[0] - lineAvg) / slopeAvg
 ```
 
-The idea here being that the image size multiplied by the length I'd like the line to be less the the line average divided by the slope gives me the right value. To me it was quite challenging as well to keep in mind that openCV images has the origin at the top.
+The idea here being that the image size multiplied by the length, removing the line average divided by the slope gives me the right value for X that I looking for. To me it was quite challenging as well to keep in mind that openCV images has the origin at the top to understand why I needed this.
 
-The challenge video is still not working and based on the discussions I've seen the tricky is to leverage HSV and saturate the image. As someone with very little familiarity with this I'd rather read the openCV documentation to understand more the concepts before trying to apply anything. 
+The challenge video is still not working perfectly and based on the discussions I've seen that the trick is to leverage HSV and saturate the image. As someone with very little familiarity with this I'd rather read the openCV documentation to understand more the concepts before trying to apply anything. 
  
 ###2. Identify potential shortcomings with your current pipeline
 
