@@ -43,9 +43,11 @@ The `draw_lines()` function is calculating the slopes and grouping by left/right
 There are too many hardcoded values, numbers, which makes it a bit hard to generallize for any kind of image/video. This is easily doable and if I get to the challenge part I'll implement it. 
 The current solution is not robust enough for driving at night.
 My current pipeline is not properly printing the solid lines, I'm still revisiting a bit more of linear algebra (rusty knowledge here) to understand what's missing. 
+If another car gets infront of our car, the camera would not be able to capture the lanes for detection. It would have to infer that lanes are still there using other clues from the environment.
 
 ###3. Suggest possible improvements to your pipeline
 
 A possible simple improvement could be read all the dimenions and calculate some of the static values.
-Another potention improvment would be to implement a similar solution but for images at night. 
+Another potention improvement would be to implement a similar solution but for images at night. 
+
 
