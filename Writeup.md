@@ -8,11 +8,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 ---
 
 ### Reflection
@@ -39,9 +34,8 @@ image = region_of_interest(image, vertices)
 
 The `draw_lines()` function is calculating the slopes and grouping by left/right and then calculating a `running_average()` of both.  This is an area that I'm not 100% sure on how to use those values. 
   
-![Sample1][out_sample1.png]
-![Sample2][out_sample2.png]
-![image1]: ./out_sample2.png
+[out_sample1.png][./out_sample1.png]
+[out_sample2.png][./out_sample2.png]
 
 ###2. Identify potential shortcomings with your current pipeline
 
